@@ -72,3 +72,18 @@ INNER JOIN category AS c ON p.categoryId = c.id;
 
 -- Assertion check
 -- insert into product(name,categoryId,description,price) values('dscd',1,'hd','-1');
+
+
+DELIMITER //
+CREATE PROCEDURE UpdateCategoryName(
+    IN category_name VARCHAR(255),
+    IN category_id INT
+)
+BEGIN
+    UPDATE category
+    SET name = category_name
+    WHERE id = category_id;
+END //
+DELIMITER ;
+
+-- CALL UpdateCategoryName('jhjbs', 1); stored procedure test

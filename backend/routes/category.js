@@ -33,7 +33,7 @@ router.get('/get',auth.authenticateToken,(req,res,next)=>{
 
 router.patch('/update',auth.authenticateToken,checkRole.checkRole,(req,res,next)=>{
   let product = req.body;
-  var query = "update category set name =? where id=?";
+  var query = "CALL UpdateCategoryName(?, ?)";
   connection.query(query,[product.name,product.id],(err,results)=>{
     if(!err){
       if(results.affectedRows == 0){
