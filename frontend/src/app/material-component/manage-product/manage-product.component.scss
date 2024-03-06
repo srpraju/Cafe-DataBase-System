@@ -1,0 +1,46 @@
+mat-card {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: left;
+  font-size: 24px;
+}
+
+.mat-form-field {
+  width: 100%;
+}
+
+.float-right {
+  float: right;
+}
+
+.add-category-btn {
+  margin-bottom: 16px;
+}
+
+.responsive_table {
+  overflow-x: auto;
+}
+
+.mat-elevation-z8 {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.mat-header-cell, .mat-cell {
+  text-align: left;
+  padding: 8px;
+}
+
+.action-link {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Optional: Style the tooltip if needed */
+.mat-tooltip {
+  font-size: 14px;
+  background-color: #333;
+  color: #fff;
+}
