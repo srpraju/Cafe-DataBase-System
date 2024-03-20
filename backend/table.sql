@@ -58,15 +58,13 @@ create table bill(
 CREATE VIEW category_view AS
 SELECT * FROM category
 ORDER BY name;
-SELECT * FROM category_view;
 
 -- SELECT * FROM category_view;
 
 
 CREATE VIEW product_category_view AS
 SELECT p.id, p.name, p.description, p.price, p.status, c.id AS categoryId, c.name AS categoryName
-FROM product AS p
-INNER JOIN category AS c ON p.categoryId = c.id;
+FROM product AS p INNER JOIN category AS c ON p.categoryId = c.id;
 
 -- SELECT * FROM product_category_view;
 
