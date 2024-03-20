@@ -13,13 +13,13 @@ const MENUITEMS = [
     state: 'category',
     name: 'Manage Category',
     icon: 'category',
-    role: 'admin',
+    role: '',
   },
   {
     state: 'product',
     name: 'Manage Product',
     icon: 'inventory_2',
-    role: 'admin',
+    role: '',
   },
   { 
     state: 'order', 
